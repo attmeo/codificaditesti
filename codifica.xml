@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "myTEI.dtd" [
+	<!ENTITY uuml "&#252;">
+	<!ENTITY deg "&#176;">
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="it">
+<!-- INIZIO HEADER -->
+	<!-- informazioni sul file, non sul testo originale -->
+	<fileDesc>
+		<titleStmt>
+			<title>I diari di Emanuele Artom</title>
+		</titleStmt>
+		<editionStmt>
+			<edition>Edizione digitale 	
+				<date when="2023">dicembre 2023</date>
+			</edition>
+			<respStmt>
+				<resp>Conversione TEI a cura di </resp>
+				<persName xml:id="MT">Matteo Trivelli</persName>
+			</respStmt>
+			<respStmt>
+				<resp>,progetto coordinato dal </resp>
+				<persName xml:id="AMDG">prof. Angelo Mario Del Grosso</persName>
+			</respStmt>
+		</editionStmt>
+		<publicationStmt>
+			<publisher>Università di Pisa</publisher>
+			<pubPlace>Pisa, PI</pubPlace>
+			<address>
+				<postCode>56126</postCode>
+				<name>Italia</name>
+			</address>
+		</publicationStmt>
+
+		<notesStmt>
+			<note xml:id ="termini">
+				<list type="Terminologia" rend="numbered">
+					<label>
+						<term xml:id="crv" xml:lang="fr">Corvèe</term>
+						<term ref="#crv" xml:lang="it">Corvata</term>
+					</label>
+					<item n="1">
+						<gloss target="#crv" source="https://www.treccani.it/vocabolario/corvee/">
+						Corvèe: Servizio di fatica assegnato a soldati.
+						</gloss>
+					</item>
+				</list>
+			</note>
+			<note xml:id ="persons">
+				<listPerson>
+					<person xml:id="FRD">
+						<persName role="partigiana">
+							<ref xml:lang="it" target="https://www.museotorino.it/view/s/6c97d64061af41c19c2f1035df652142"/>
+							<forename>Frida</forename>
+							<surname>Malan</surname>
+						</persName> 
+					</person>
+					<person xml:id="CHMB">
+						<persName role="ministro">
+							<ref xml:lang="it" target="https://www.treccani.it/enciclopedia/arthur-neville-chamberlain_(Enciclopedia-Italiana)/"/>
+							<forename>Arthur Neville</forename>
+							<surname>Chamberlain</surname>
+						</persName>
+					</person>
+					<person xml:id="AR">
+						<persName role="ministro">
+							<ref xml:lang="it" target="https://www.treccani.it/enciclopedia/aristofane_%28Enciclopedia-Italiana%29/"/>
+							<forename>Aristofane</forename>
+						</persName>
+					</person>
+				</listPerson>
+			</note>
+			<note xml:id ="place">
+				<listPlace>
+					<place xml:id="BB">
+						<placeName>Bobbio</placeName>
+						<settlement>Piacenza</settlement>
+						<country>Italia</country>
+					</place>
+					<place xml:id="TP">
+						<placeName>Torre Pellice</placeName>
+						<settlement>Torino</settlement>
+						<country>Italia</country>
+					</place>
+					<place xml:id="LSR">
+						<placeName>Luserna</placeName>
+						<settlement>Trento</settlement>
+						<country>Italia</country>
+					</place>
+				</listPlace>
+			</note>
+			<note xml:id ="libro">
+				<listBibl>
+					<bibl xml:id="fisch">
+						<author ref="#GC">
+							<forename>Giuseppe</forename>
+							<surname>Cassone</surname> 
+						</author>
+						<title type="main">Il fischietto</title>
+						<pubPlace>
+							<placeName xml:id="tn">Torino</placeName>
+						</pubPlace>
+						<date when="1848">1848</date>
+					</bibl>
+				</listBibl>
+			</note>
+			<note xml:id ="Org">
+				<listOrg>
+					<org>
+						<orgName>Partito d'Azione</orgName>
+						<desc>Partito politico italiano di centro-sinistra fondato nel 1942.</desc>
+					</org>
+				</listOrg>
+			</note>
+    	</notesStmt> 
+
+		<!-- riferimenti alla fonte dalla quale è tratto il testo -->
+		<sourceDesc>
+			<msDesc>
+				<msIdentifier>
+					<settlement>Milano</settlement> 
+					<institution ref="http://digital-library.cdec.it/cdec-web/">Fondazione Centro di Documentazione Ebraica Contemporanea CDEC Onlus</institution>
+					<repository></repository>
+				</msIdentifier>
+				
+				<!-- descrizione generalità del manoscritto-->
+				<msContents>
+					<msItem>
+						<!-- il contenuto del manoscritto-->
+						<title>Diari</title>
+						<author ref="https://it.wikipedia.org/wiki/Emanuele_Artom">Emanuele Artom</author>
+						
+						<textLang mainLang="it">Italiano</textLang>
+						
+						<docImprint> 
+			
+							<date from="1940-01" to="1944-02">Gennaio 1940 - Febbraio 1944</date>
+			
+						</docImprint>
+					</msItem>
+				</msContents>
+				
+				<physDesc>
+					<!-- descrizione fisica del manoscritto-->
+					<objectDesc>
+						<supportDesc>
+							<!-- descrizione del materiale fisico-->
+							<support>scritto su
+								<material>carta</material>
+							</support>
+							<extent>174 pagine</extent>
+							<condition>Il diario si presenta in condizioni discrete e, nonostante i segni del tempo, rimane ben leggibile.
+								Si alternano gli utilizzi di matita e penna, come testimoniano le evidenti macchie d'inchiostro.
+							</condition>
+						</supportDesc>
+						<!-- descrizione dell'impaginazione-->
+						<layoutDesc>
+							<layout columns="1" ruledLines="5 30">
+								<p>La maggior parte delle pagine si compone di 22 righe, altre pagine arrivano ad averne all'incirca 30,
+								mentre altre ancora presentano solamente poche righe.</p>
+							</layout>
+						</layoutDesc>
+					</objectDesc>
+					<handDesc>
+						<p>Scritto da una sola mano, quella dell'autore.</p>
+					</handDesc>
+					<typeDesc>
+						<p>Scritto in corsivo, non sempre di facile comprensione. 
+						Sono presenti note a margine, correzioni e cancellature.</p>
+					</typeDesc>
+				</physDesc>
+
+				<!-- storia del manoscritto-->
+				<history>
+					<origin>
+						<p>Il manoscritto è opera di
+						
+							<persName>Emanuele Artom</persName> e 
+						riguarda l'esperienza partigiana dell'autore da
+					
+							<date from="1940-01" to="1944-02">gennaio 1940 a febbraio 1944.</date>   
+					
+						</p>
+					</origin>
+
+					<!-- informazioni sul processo e l'acquisizione del documento da parte dell'istituzione-->
+					<acquisition>Il documento è stato donato alla
+					
+						<orgName ref="http://digital-library.cdec.it/cdec-web/">Fondazione Centro di Documentazione Ebraica Contemporanea CDEC Onlus.</orgName>
+		 
+					</acquisition>
+				</history>
+			</msDesc>
+		</sourceDesc>
+	</fileDesc>
+
+	<!-- descrizione degli aspetti non bibliografici del testo -->
+	<profileDesc>
+		<langUsage>
+			<language ident="it">Italiano</language>
+		</langUsage>
+		<textDesc>
+			<!-- mezzo attraverso cui il testo è trasmesso -->
+			<channel mode="w"/>
+			<!-- info riguardanti la completezza di un testo -->
+			<constitution type="single"/>
+			<!-- testo originale -->
+			<derivation type="original"/>
+			<!-- contesto sociale nel quale è stato scritto o per cui è rivolto -->
+			<domain type="domestic"/>
+			<!-- testo immaginario o non immaginario -->
+			<factuality type="fact"/>
+			<!-- monologo sotto forma di diario rivolto ad una sola persona, il lettore -->
+			<interaction type="none" active="single" passive="self"/>
+			<!-- testo spontaneo -->
+			<preparedness type="none"/>
+			<!-- scopo del testo e livello -->
+			<purpose type="inform" degree="high"/>
+		</textDesc>
+
+		<!-- contesto nel quale si trova il testo -->
+		<settingDesc>
+			<setting>
+				<p>
+					Testi registrati nel 
+					<orgName ref="http://digital-library.cdec.it/cdec-web/">Centro di Documentazione Ebraica Contemporanea CDEC Onlus</orgName> di 
+					<placeName>Milano</placeName>, <country>Italia</country>.
+					<time>
+						<date when="1966">1966</date>
+					</time>
+				</p>
+			</setting>
+		</settingDesc>
+	</profileDesc>
+
+</teiHeader>
+		<!-- FINE HEADER -->
+
+		<!-- IMMAGINI DELLE PAGINE-->
+		<facsimile>
+			<!-- PAGINA 147-->
+			<surface>
+			<graphic xml:id="p147" url='img/p147.jfif' width='754px' height='1024px' />
+			</surface>
+			<!-- PAGINA 148-->
+			<surface>
+			<graphic xml:id="p148" url='img/p148.jfif' width='754px' height='1024px' />
+			</surface>
+			<!-- PAGINA 149-->
+			<surface>
+			<graphic xml:id="p149" url='img/p149.jfif' width='754px' height='1024px' />
+			</surface>
+		</facsimile>
+
+		<!-- INIZIO BODY -->
+		<text>
+			<body>
+				<!-- prima pagina codificata -->
+				<!-- page beginning -->
+				<pb n="147" facs="img/p147.jfif"/>
+				<ab xml:id="p-147">
+					<date type="header" when="4-02-1944">4.2.4<subst><del rend="overwrite">3</del><add place="inline">4</add></subst>.</date>
+					<lb n="1"/>Ieri giornata di battaglia. Alla mattina andai
+					<lb n="2"/>da <persName>Frida</persName>, che mi riferì sul suo viaggio. A
+					<lb n="3"/>
+					casa grande preoccupazione perché scrivo
+					<lb n="4"/>solo cartoline: temevano che fossi malato. Non 
+					<lb n="5"/>pensano che ho ragione di aver paura ad andare
+					<lb n="6"/>alla posta con scritti. Quanto a 
+						<persName>
+							<abbr type="suspension">
+							G
+							</abbr>
+							<del rend="overstrike" hand="author">
+								<gap reason="cancelled">
+								</gap>
+							</del>
+						</persName>
+							si è
+					<lb n="7"/>verificato quanto temevo: i 
+					<choice>
+						<abbr>com.</abbr>
+						<expan>comunisti</expan>
+					</choice> 
+					 se lo stanno
+					<lb n="8"/>guadagnando 
+					<w>al
+						<del rend="overstrike" hand="author">
+							<gap reason="cancelled"></gap>
+						</del>
+					</w> loro partito. Dice di essere
+					<lb n="9"/>entrato nel 
+					<choice>
+						<abbr type="acronym">PdA</abbr>
+						<expan>Partito d'Azione</expan>
+					</choice> su mia pressione 
+					<abbr>
+					ecc
+					</abbr>,
+					<lb n="10"/><persName>Frida</persName> farà quello che può. Poi son partito
+					<lb n="11"/>alla ricerca di 
+						<persName>
+							<abbr type="suspension">
+							G
+							</abbr>
+							<del rend="overstrike" hand="author">
+								<gap reason="cancelled">
+								</gap>
+							</del>
+						</persName>. 
+						A <placeName>Luserna</placeName> sento sparare 
+					<lb n="12"/>con la mitragliatrice. La caserma di <placeName cert="low">Bobbio</placeName>
+					<lb n="13"/>bloccata, non ha né acqua, né luce, né telefono,
+					<lb n="14"/>né viveri da <num type="cardinal" value="2">2</num> giorni. La guarnigione
+					<lb n="15"/>è agli 
+					<gap reason="illegible"></gap> <gap reason="illegible"></gap> da 
+						<del rend="overstrike" hand="author">
+							<gap reason="cancelled">
+							</gap>
+						</del> qualche
+					<lb n="16"/>
+					<choice>
+						<sic>giorni</sic>
+						<corr>giorno</corr>
+					</choice> ha cercato di racimolare militi:
+					<lb n="17"/>ora ne manda dei camion a <placeName cert="low">Bobbio</placeName> per
+					<lb n="18"/>rompere il blocco, ma incontra le prime re=
+					<lb break="no" n="19"/>sistenze, da parte della banda di Mar.
+					<lb n="20"/>Intanto io provo qualche incertezza quando
+					<lb n="21"/>giungo alla base di Mart. Non c'è quasi
+					<lb n="22"/>nessuno, ma trovo <w>L<unclear reason="illegible"></unclear></w>. Si pranza assieme
+					<lb n="23"/>e gli dico di andare al <w>S<gap quantity="2" unit="char"></gap></w>. Poi <del rend="overstrike" hand="author"></del>
+					<lb n="24"/>procedo verso 
+					<choice>
+						<sic>gl'</sic>
+						<corr resp="editor">gli</corr>
+					</choice> Ivert. 
+					<persName>
+						<abbr type="suspension">
+						G
+						</abbr>
+					</persName>, senza
+					<lb n="25"/>venire all'appuntamento, ha cambiato
+					<lb n="26"/>base: pare che si diverta a far fare
+					<lb n="27"/>una 
+					<term xml:lang="fr">
+						<choice>
+							<sic>tourneé</sic>
+							<corr resp="editor">tournée</corr>
+						</choice>
+					</term>
+					al suo Z: cose da pazzi.
+					<lb n="28"/>Da M. alcuni lo hanno già conosciuto
+					<lb n="29"/>gli chiederò conto di questo scandaloso giro 
+					<lb n="30"/>pubblicitario, a cui si aggiunge il fatto
+				</ab>
+
+			<!-- seconda pagina codificata -->
+			<!-- page beginning -->
+				<pb n="148" facs="img/p148.jfif"/>
+				<ab xml:id="p-148">
+					<lb n="1"/>che vien qua e non si cura di chiedere 
+					<lb n="2"/>conto di me. So che <persName>Ugo</persName> e sua mamma
+					<lb n="3"/>sono da <persName>Geo</persName>. Vado a trovarli e incontro 
+					<lb n="4"/>Ugo e Geo che mi vengono incontro.
+					<lb n="5"/>Arruolo 
+						<w>
+							<subst>
+								<del rend="overwrite">G</del>
+								<add place="inline">U</add>
+							</subst>go
+						</w> 
+						e lo
+						<w>mande<subst><add place="below">rò</add></subst>
+						</w>	
+						alla Lea come
+					<lb n="6"/>commissario politico. <persName>Geo</persName> verrà con 
+					<lb n="7"/>me come mia staffetta personale.
+					<lb n="8"/>
+					<w>
+						<del rend="overstrike">
+						Alla sera	
+						</del>
+					</w>
+					<persName>Geo</persName> è molto 
+					<choice>
+						<sic>mal visto</sic>
+						<corr resp="editor">malvisto</corr>
+					</choice>
+					<lb n="9"/>alla base: come <persName>Ezio</persName> all'<placeName cert="low">Alsara</placeName>,
+					<lb n="10"/>come <persName>Francolino</persName> a <placeName cert="low">Barge</placeName>. È questione
+					<lb n="12"/>di età. Basti questo appunto da svolgere.
+					<lb n="11"/>Alla sera andiamo 
+					<choice>
+						<sic>ni</sic>
+						<corr resp="editor">in</corr>
+					</choice>
+					base. Per i canaloni
+					<lb n="13"/>ghiacciati si scivola paurosamente.
+					<lb n="14"/>
+					<persName>
+						<abbr type="suspension">
+						G.
+						</abbr>
+					</persName>,
+					<persName>
+						<abbr type="suspension">
+						Z
+						</abbr>
+					</persName>
+					e altri sono a un rifugio
+					<lb n="15"/>distante 
+					<choice>
+						<sic>un ora</sic>
+						<corr resp="editor">un'ora</corr>
+					</choice>
+					<del>
+						<gap unit="chars" quantity="1" reason="illegible"/>
+					</del> 
+					rimasti stanchissimi
+					<lb n="16"/>per le corvée del giorno.
+					<del rend="overstrike" hand="author">
+						<gap reason="cancelled"></gap>
+					</del>
+					Mi assumo
+					<lb n="17"/>demagogicamente con <persName>Ugo</persName> e <persName>Geo</persName> la
+					<lb n="18"/>guardia per la notte. Mentre veglio
+					<lb n="19"/><pc force="inter">-</pc> e il fuoco mi tiene compagnia chiacchie=
+					<lb break="no" n="20"/>rando con i suoi schioppettii e chie=
+					<lb break="no" n="21"/>dendomi ogni tanto un pezzo di legno
+					<lb n="22"/>da mangiare <pc force="inter">-</pc><q type="thought"> mai ho tanto
+					<lb n="23"/>goduto la sua calda compagnia</q> <pc force="inter">-</pc> arrivano
+					<lb n="24"/><persName>Silvio</persName> e un altro ad 
+					<choice>
+						<orig>annunziare</orig> 
+						<reg>annunciare</reg>
+					</choice> la loro
+					<lb n="25"/>hanno trattenuto alcuni 
+					<choice>
+						<sic>cammion</sic>
+						<corr resp="editor">camion</corr>
+					</choice> con
+					<lb n="26"/><num type="cardinal" value="150">150</num> fascisti, mettendone 
+					<num type="cardinal" value="60">60</num> fuori com
+					<lb break="no" n="27"/>battimento. Due leggeri feriti dei nostri.
+					<lb n="28"/>Gli 
+					<choice>
+						<sic>areoplani</sic>
+						<corr resp="editor">aeroplani</corr>
+					</choice> li mitragliavano, ma
+					<lb n="29"/>loro 
+					<w>
+						<del rend="overstrike">
+						era	
+						</del>
+					</w> strisciando si ritirarono sotto
+				</ab>
+
+				<!-- terza pagina codificata -->
+				<!-- page beginning -->
+				<pb n="149" facs="p149.jfif"/>
+				<ab xml:id="p-149">
+					<lb n="1"/>certe 
+					<choice>
+						<sic>roccie</sic>
+						<corr resp="editor">rocce</corr>
+					</choice>. La magnifica battaglia, diretta 
+					<lb n="2"/>da 
+					<persName>
+						<abbr type="suspension">
+						M
+						</abbr>
+					</persName> e da 
+					<persName>
+						<abbr type="suspension">
+						I
+						</abbr>
+					</persName> durò <num type="cardinal" value="5">5</num> ore. I fascisti super=
+					<lb break="no" n="3"/>stiti si ritirarono disordinatamente a 
+					<lb n="4"/><placeName>Torre</placeName>, dove malmenarono la popolazione.
+					<lb n="5"/>Che cosa avverrà nei prossimi giorni?
+					<lb n="6"/>Se non reagiranno vuol dire che sono
+					<lb n="7"/>proprio agli 
+					<del rend="overstrike" hand="author">
+						<gap reason="cancelled"/>
+					</del> estremi. 
+					<del rend="overstrike" hand="author">
+						<gap reason="cancelled"/>
+					</del>
+					<lb n="8"/>
+					<del rend="overstrike" hand="author">
+						<gap reason="cancelled"/>
+					</del> È probabile che intanto la ca= 
+					<lb break="no" n="9"/>serma di <placeName>Bobbio</placeName> sia caduta e che si
+					<lb n="10"/>sia anche fatto un grosso bottino di armi,
+					<lb n="11"/>così ho passato tutta la notte sveglio,
+					<lb n="12"/>quasi: mancavano le coperte e ho
+					<lb n="13"/>dato il soprabito a un ragazzo perché si
+					<lb n="14"/>coprisse. Poi ho sentito che uno 
+						<add place="above">gli</add> diceva: 
+					<lb n="15"/><q type="spoken"> las <w>c&uuml;verte</w>?</q> E l'altro rispondeva:
+					<lb n="16"/>
+					<q type="spoken">
+						<gap reason="illegible" quantity="1" unit="char"></gap> l'hai 
+						<gap reason="illegible" quantity="2" unit="char"></gap> al 
+						<gap reason="illegible" quantity="5" unit="char"></gap> dal Commissario
+					</q>
+					<lb n="17"/>del Popolo. Mi accorgo, che come tutti i poli=
+					<lb break="no" n="18"/>tici, da 
+					<persName>Cleone</persName> di 
+					<persName>Aristofane</persName> a 
+					<hi rend="underline">
+						<persName cert="medium">Chamberlain</persName> 
+					</hi>
+					<add place="margin right inspace" hand="author">mi consolo pensando</add>
+					<add place="margin right inspace" hand="author">a <persName>Cavour</persName> sul 
+						<orgName ref="https://it.wikipedia.org/wiki/Il_Fischietto">
+						Fischietto
+						</orgName>
+					</add> 
+					<lb n="19"/>sono anche denigrato e schernito; cerco
+					<lb n="20"/>di guadagnarmi i singoli uomini con rapporti
+					<lb n="21"/>di personale amicizia, ma come è difficile
+					<lb n="22"/>trascinare questo pesantissimo popolo. Le
+					<lb n="23"/>bande di 
+					<orgName>
+						<abbr type="acronym">
+						T.P.
+						</abbr>
+						<expan> 
+						Torre Pellice
+						</expan>
+					</orgName>
+					<gap reason="illegible" quantity="1" unit="char"></gap> hanno già 
+					<lb n="24"/>consumato <num type="cardinal" value="3">3</num> <gap reason="illegible" quantity="5" unit="char"></gap>:
+					<persName>Franco</persName>, 
+					<lb n="25"/><persName cert="low">Nada</persName>, che, mi ha detto il colonnello, ha
+					<lb n="26"/>pure avuto poco successo, <persName>Nello</persName>: ora consu=
+					<lb break="no" n="27"/>ma il <num type="ordinal" value="4">4&deg;</num>. Navigo tra Scilla e Cariddi;
+					<lb n="28"/>a destra gli ufficiali badolgliani a sini=
+					<lb break="no" n="29"/>stra gli ufficiali comunisti. In mezzo 
+					<gap reason="illegible" quantity="1" unit="char"></gap> 
+					<lb n="30"/><del rend="overstrike">il 
+						<abbr type="acronym">P. d. A.</abbr>
+					</del> Sopra <persName>Roberto</persName> che mi schiaccia,
+				</ab>
+
+			</body>
+		</text>
+	</TEI>
